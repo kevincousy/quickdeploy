@@ -39,3 +39,17 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/kevincousy/quickdeploy.git
 git push -u origin master
+
+--
+
+Serverless credentials
+serverless-admin
+Access key ID:      AKIAIZX3GQ5GF64DEVVQ 
+Secret access key:  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
+export AWS_ACCESS_KEY_ID=AKIAIZX3GQ5GF64DEVVQ
+export AWS_SECRET_ACCESS_KEY=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
+
+{saves to ~/.aws/credentials}
+serverless config credentials --provider aws --key AKIAIZX3GQ5GF64DEVVQ --secret 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
+
+sls deploy
