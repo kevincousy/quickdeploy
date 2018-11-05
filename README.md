@@ -29,3 +29,13 @@ Use Express for simple web pages
 Use basic EJS template and error handlers
 Use vanilla style.css
 
+--
+
+git config --global credential.helper wincred
+
+echo "# quickdeploy" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/kevincousy/quickdeploy.git
+git push -u origin master
