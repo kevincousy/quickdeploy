@@ -30,7 +30,7 @@ Use basic EJS template and error handlers
 Use vanilla style.css
 
 --
-
+Git Bash:
 git config --global credential.helper wincred
 
 echo "# quickdeploy" >> README.md
