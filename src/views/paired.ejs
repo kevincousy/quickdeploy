@@ -1,0 +1,21 @@
+<div class="form-header">
+    <% if (Object.keys(errors).length === 0) { %>
+        <h2>Enter an array of numbers separated by spaces</h2>
+    <% } else { %>
+        <h2 class="errors-heading">Please enter a valid array of numbers</h2>
+        <ul class="errors-list">
+            <% Object.values(errors.forEach(error => { %>
+            <li><%= error.msg &></li>
+            <% }) %>
+        </ul>
+    <% } %>
+</div>
+<form method="post" action="/paired" novalidate>
+<div class="form-field">
+    <label for="userArray">Array</label>
+    <textarea class="input" id="message" name="message" rows="4" autofocus></textarea>
+</div>
+<div class="form-actions">
+    <button class="btn" type="submit">Pair It</button>
+</div>
+</form>
